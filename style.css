@@ -3,7 +3,7 @@ h3 {
     font-size: 1rem;
 }
 .place-fix {
-  padding: 12em 0 10em 0;
+  padding-top: 12em;
 }
 
 .loading {
@@ -41,6 +41,10 @@ h3 {
 
 
 .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background: #16A085;
     color: #ffffff;
     text-align: center;
