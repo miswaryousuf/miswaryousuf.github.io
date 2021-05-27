@@ -1,13 +1,16 @@
 h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
+    user-select: none;
 }
 .place-fix {
   padding-top: 12em;
 }
 
 .loading {
-    color: #16A085;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @keyframes bouncing-loader {
@@ -20,13 +23,14 @@ h3 {
 .bouncing-loader {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .bouncing-loader > div {
   width: 16px;
   height: 16px;
-  margin: 3rem 0.2rem;
-  background: #16A085;
+  margin: 1rem 0.2rem;
+  background: #f12711;
   border-radius: 50%;
   animation: bouncing-loader 0.6s infinite alternate;
 }
@@ -39,13 +43,12 @@ h3 {
   animation-delay: 0.4s;
 }
 
-
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #16A085;
+    background: linear-gradient(to right, #f12711, #f5af19);
     color: #ffffff;
     text-align: center;
     padding: 1em 0;
